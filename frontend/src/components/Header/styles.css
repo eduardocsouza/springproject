@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    background: linear-gradient(180deg, #102347 0%, #181818 100%);
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .header-container img {
+    width: 235px;
+  }
+  
+  .header-container h1 {
+    margin-top: 15px;
+    font-size: 24px;
+  }
+  
+  .header-container p {
+    font-weight: 300;
+    font-weight: 14px;
+  }
+  
+  .header-container a {
+    color: #fff;
+    text-decoration: none;
+  }
