@@ -9,6 +9,11 @@ export default function Card() {
   const [minDate, setMinDate] = useState(new Date(new Date().setDate(new Date().getDate() - 365)));
   const [maxDate, setMaxDate] = useState(new Date);
 
+  const dmin = minDate.toISOString().slice(0, 10);
+  const dmax = maxDate.toISOString().slice(0, 10);
+
+  
+
   return (
     <div id="card">
       <h2 id="title-vendas">Vendas</h2>
@@ -31,7 +36,7 @@ export default function Card() {
           />
         </div>
       </div>
-      <Table />
+      <Table dmin={dmin} dmax={dmax}/>
     </div>
   );
 }
